@@ -19,6 +19,14 @@ ul {
         justify-content: center;
         box-sizing: border-box;
 }
+a {
+  text-decoration: none;
+  color: #000000;
+
+}
+
+
+
 .logo {
     display: flex;
     justify-content: center;
@@ -41,7 +49,6 @@ ul {
         line-height: 20px;
         letter-spacing: 0;
         text-align: center;
-        height: 52px;
         background-color: rgba(255, 255, 255, 1);
         padding: 16px 0;
         box-sizing: border-box;
@@ -219,15 +226,14 @@ main {
         margin-right: 0;
     }
     .search-button {
-        margin-right: 17px;
+        margin-right: 10px;
     }
     .menu-icon {
         gap: 10px;
     }
     .donating {
-        height: 48px;
-        margin: 12px 0;
-
+      padding: 12px 0;
+      
     }
     main {
         width: 100%;
