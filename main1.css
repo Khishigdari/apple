@@ -1,0 +1,465 @@
+      ul {
+        list-style-type: none;
+        display: flex;
+        gap: 24px;
+        font-family: inter;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -0.28px;
+        width: 1920px;
+        height: 44px;
+        background-color: rgba(245, 245, 247, 0.8);
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+
+      .ad {
+        font-family: inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0;
+        text-align: center;
+        height: 52px;
+        background-color: rgba(255, 255, 255, 1);
+        padding: 16px 622.5px;
+        box-sizing: border-box;
+        justify-content: center;
+        margin: 0 auto;
+      }
+
+      main {
+        background-image: url(images/Background.png);
+        justify-content: center;
+        margin: 0 auto;
+        width: 1920px;
+        height: 692px;
+      }
+
+      .text {
+        font-family: inter;
+        font-size: 52px;
+        line-height: 60px;
+        font-weight: 600;
+        letter-spacing: -0.28px;
+        color: #f5f5f7;
+      }
+
+      .sub-text {
+        font-family: inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #f5f5f7;
+        margin-top: 16px;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        text-align: center;
+        padding-top: 55px;
+        box-sizing: border-box;
+      }
+
+      .learn-more {
+        width: 123px;
+        height: 44px;
+        border-radius: 999px;
+        background-color: #0071e3;
+        padding: 12px 20px;
+        gap: 10px;
+        border: 0;
+        color: #ffffff;
+        font-family: inter;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        font-weight: 400;
+        margin-right: 16px;
+      }
+
+      .buy {
+        width: 68px;
+        height: 44px;
+        border-radius: 999px;
+        border: 1px solid #2997ff;
+        padding: 12px 20px;
+        gap: 10px;
+        background-color: transparent;
+        color: #2997ff;
+        font-family: inter;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        font-weight: 400;
+      }
+
+      .background-2 {
+        background-image: url(images/background-2.png);
+        width: 1920px;
+        height: 692px;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 12px;
+      }
+
+      .button-1 {
+        width: 123px;
+        height: 44px;
+        border-radius: 999px;
+        background-color: #ffffff;
+        gap: 10px;
+        border: 1px solid #ffffff;
+        color: #000000;
+        font-family: inter;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        font-weight: 400;
+        margin-right: 16px;
+      }
+
+      .button-2 {
+        width: 68px;
+        height: 44px;
+        border-radius: 999px;
+        border: 1px solid #ffffff;
+        padding: 12px 20px;
+        gap: 10px;
+        background-color: transparent;
+        color: #ffffff;
+        font-family: inter;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        font-weight: 400;
+      }
+
+      .background-3 {
+        background-image: url(images/Figure.png);
+        width: 1920px;
+        height: 692px;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 12px;
+      }
+
+      .content-3 {
+        text-align: center;
+        padding-top: 446px;
+      }
+
+      .content-text {
+        font-family: inter;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 60px;
+        letter-spacing: -0.28px;
+        color: #000000;
+        margin-bottom: 12px;
+      }
+
+      .content-sub-text {
+        font-family: inter;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        color: #000000;
+        margin-bottom: 16px;
+      }
+
+      .shop-button {
+        font-size: inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+        color: #ffffff;
+        width: 114px;
+        height: 44px;
+        border-radius: 999px;
+        padding: 12px 20px;
+        background-color: #0071e3;
+        border: 0;
+      }
+
+      .row-1-1 {
+        background-image: url(images/ipadair.png);
+        width: 942px;
+        height: 580px;
+        margin-top: 12px;
+        margin-right: 12px;
+        padding-top: 58px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .ipadairtext {
+        margin-top: 9px;
+        margin-bottom: 20px;
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #1d1d1f;
+      }
+
+      .gradient {
+        font-family: inter;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        background-image: linear-gradient(#0090f7, #ba62fc, #f2416b, #f55600);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-top: 324px;
+      }
+
+      .button-learn {
+        width: 115px;
+        height: 40px;
+        border-radius: 999px;
+        padding: 10px 16px;
+        background-color: #0071e3;
+        border: 0;
+        color: #ffffff;
+        font-family: inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+      }
+
+      .button-buy {
+        width: 68px;
+        height: 40px;
+        border-radius: 999px;
+        border: 1px solid #2997ff;
+        padding: 10pz 20px;
+        background-color: transparent;
+        color: #2997ff;
+        margin-left: 16px;
+        font-family: inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: -0.37px;
+      }
+
+      .row {
+        display: flex;
+        justify-content: center;
+      }
+
+      .row-1-2 {
+        background-image: url(images/airpods.png);
+        width: 942px;
+        height: 580px;
+        margin-top: 12px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .airpods-heading {
+        font-family: inter;
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 44px;
+        color: #f5f5f7;
+        margin-top: 401px;
+      }
+
+      .airpods-text {
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #f5f5f7;
+        margin-top: 2px;
+        margin-bottom: 10px;
+      }
+
+      .row-2-1 {
+        background-image: url(images/watch.png);
+        width: 942px;
+        height: 580px;
+        margin-top: 12px;
+        margin-right: 12px;
+        padding-top: 58px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .watch {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .applelogo {
+        width: 26.35px;
+        height: 32px;
+      }
+
+      .watch-heading {
+        font-family: inter;
+        font-size: 32px;
+        font-weight: 700;
+        color: #000000;
+      }
+
+      .watch-text {
+        font-family: inter;
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        color: #000000;
+        margin: 4px 0;
+      }
+
+      .watch-text2 {
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #1d1d1f;
+        margin-bottom: 16px;
+      }
+
+      .row-2-2 {
+        background-image: url(images/macbook.png);
+        width: 942px;
+        height: 580px;
+        margin-top: 12px;
+        padding-top: 48px;
+        box-sizing: border-box;
+        text-align: center;
+      } 
+
+      .macbook-heading {
+        font-family: inter;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: #1d1d1f;
+        margin-bottom: 2px;
+      }
+
+      .macbook-text {
+        font-family: inter;
+        font-size: 18px;
+        line-height: 25px;
+        color: #1d1d1f;
+        font-weight: 400;
+        margin-bottom: 10px;
+      }
+
+      .row-3-1 {
+        background-image: url(images/tradein.png);
+        width: 942px;
+        height: 580px;
+        margin-top: 12px;
+        margin-right: 12px;
+        padding-top: 58.42px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .tradein {
+        display: flex;
+        gap: 7px;
+        justify-content: center;
+      }
+
+      .tradein-heading {
+        font-family: inter;
+        font-size: 32px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 4px;
+      }
+
+      .tradein-text {
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #1d1d1f;
+        margin-bottom: 16px;
+      }
+
+      .button-tradein {
+        width: 167px;
+        height: 40px;
+        border-radius: 999px;
+        border: 0;
+        background-color: #0071E3;
+        padding: 10px 16px;
+        color: #FFFFFF;
+        font-family: inter;
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .row-3-2 {
+        background-image: url(images/card.png);
+        width: 942px;
+        height: 580px;
+        margin-top: 12px;
+        padding-top: 58px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      .card {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+      }
+
+      .card-heading {
+        font-family: inter;
+        font-size: 32px;
+        font-weight: 700;
+        color: #000000;
+        margin-bottom: 4px;
+      }
+
+      .card-text {
+        font-family: inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 25px;
+        color: #1d1d1f;
+        margin-bottom: 16px;
+      }
+
+      .button-apply {
+        width: 112px;
+        height: 40px;
+        border: 1px solid #0071E3;
+        border-radius: 999px;
+        font-family: inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        color: #0071E3;
+        margin-left: 16px;
+      }
+
+      section {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 0 12px;
+      }
+
+      .row {
+        height: 580px;
+        width: calc(50% - 6px);
+        background-size: cover;
+        background-position: center;
+      }

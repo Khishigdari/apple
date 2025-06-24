@@ -1,4 +1,8 @@
-      ul {
+body {
+    margin: 0 auto;
+}
+
+ul {
         list-style-type: none;
         display: flex;
         gap: 24px;
@@ -7,16 +11,30 @@
         font-weight: 400;
         line-height: 60px;
         letter-spacing: -0.28px;
-        width: 1920px;
+        width: 100%;
         height: 44px;
         background-color: rgba(245, 245, 247, 0.8);
         margin: 0 auto;
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-      }
+}
+.logo {
+    display: flex;
+    justify-content: center;
 
-      .ad {
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.menu-button {
+    display: none;
+}
+.donating {
         font-family: inter;
         font-size: 14px;
         font-weight: 400;
@@ -25,20 +43,18 @@
         text-align: center;
         height: 52px;
         background-color: rgba(255, 255, 255, 1);
-        padding: 16px 622.5px;
+        padding: 16px 0;
         box-sizing: border-box;
         justify-content: center;
         margin: 0 auto;
-      }
-
-      main {
-        background-image: url(images/Background.png);
-        justify-content: center;
-        margin: 0 auto;
-        width: 1920px;
-        height: 692px;
-      }
-
+}
+main {
+    background-image: url(images/Background.png);
+    width: 100%;
+    height: 692px;
+    background-size: cover;
+    background-position: center;
+}
       .text {
         font-family: inter;
         font-size: 52px;
@@ -96,13 +112,12 @@
         letter-spacing: -0.37px;
         font-weight: 400;
       }
-
-      .background-2 {
+            .background-2 {
         background-image: url(images/background-2.png);
-        width: 1920px;
+        width: 100%;
+        background-size: cover;
+        background-position: center;        
         height: 692px;
-        justify-content: center;
-        margin: 0 auto;
         margin-top: 12px;
       }
 
@@ -137,13 +152,12 @@
         letter-spacing: -0.37px;
         font-weight: 400;
       }
-
-      .background-3 {
+            .background-3 {
         background-image: url(images/Figure.png);
-        width: 1920px;
+        width: 100%;
         height: 692px;
-        justify-content: center;
-        margin: 0 auto;
+        background-size: cover;
+        background-position: center;  
         margin-top: 12px;
       }
 
@@ -186,173 +200,47 @@
         border: 0;
       }
 
-      .row-1-1 {
-        background-image: url(images/ipadair.png);
-        width: 942px;
-        height: 580px;
-        margin-top: 12px;
-        margin-right: 12px;
-        padding-top: 58px;
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      .ipadairtext {
-        margin-top: 9px;
-        margin-bottom: 20px;
-        font-family: inter;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        color: #1d1d1f;
-      }
-
-      .gradient {
-        font-family: inter;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 18px;
-        background-image: linear-gradient(#0090f7, #ba62fc, #f2416b, #f55600);
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        margin-top: 324px;
-      }
-
-      .button-learn {
-        width: 115px;
-        height: 40px;
-        border-radius: 999px;
-        padding: 10px 16px;
-        background-color: #0071e3;
-        border: 0;
-        color: #ffffff;
-        font-family: inter;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: -0.37px;
-      }
-
-      .button-buy {
-        width: 68px;
-        height: 40px;
-        border-radius: 999px;
-        border: 1px solid #2997ff;
-        padding: 10pz 20px;
-        background-color: transparent;
-        color: #2997ff;
-        margin-left: 16px;
-        font-family: inter;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: -0.37px;
-      }
-
-      .row {
+@media (max-width: 1024px){
+    li {
+        display: none;
+    }
+    ul {
+        justify-content: space-between;
+        padding-left: 16px;
+    }
+    .logo {
         display: flex;
         justify-content: center;
-      }
-
-      .row-1-2 {
-        background-image: url(images/airpods.png);
-        width: 942px;
-        height: 580px;
-        margin-top: 12px;
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      .airpods-heading {
-        font-family: inter;
-        font-size: 36px;
-        font-weight: 600;
-        line-height: 44px;
-        color: #f5f5f7;
-        margin-top: 401px;
-      }
-
-      .airpods-text {
-        font-family: inter;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        color: #f5f5f7;
-        margin-top: 2px;
-        margin-bottom: 10px;
-      }
-
-      .row-2-1 {
-        background-image: url(images/watch.png);
-        width: 942px;
-        height: 580px;
-        margin-top: 12px;
-        margin-right: 12px;
-        padding-top: 58px;
-        box-sizing: border-box;
-        text-align: center;
-      }
-
-      .watch {
+        align-items: center;
+    }
+    .menu-button {
+        display: block;
         display: flex;
-        gap: 8px;
-        justify-content: center;
-      }
+        margin-right: 0;
+    }
+    .search-button {
+        margin-right: 17px;
+    }
+    .menu-icon {
+        gap: 10px;
+    }
+    .donating {
+        height: 48px;
+        margin: 12px 0;
 
-      .applelogo {
-        width: 26.35px;
-        height: 32px;
-      }
+    }
+    main {
+        width: 100%;
+        height: 650px;
 
-      .watch-heading {
-        font-family: inter;
-        font-size: 32px;
-        font-weight: 700;
-        color: #000000;
-      }
+    }
+    .background-2 {
+        width: 100%;
+        height: 650px;
+    }
+    .background-3 {
+        display: none;
+    }
+}
 
-      .watch-text {
-        font-family: inter;
-        font-size: 15px;
-        letter-spacing: 2px;
-        font-weight: 700;
-        color: #000000;
-        margin: 4px 0;
-      }
 
-      .watch-text2 {
-        font-family: inter;
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 25px;
-        color: #1d1d1f;
-        margin-bottom: 16px;
-      }
-
-      .row-2-2 {
-        background-image: url(images/macbook.png);
-        width: 942px;
-        height: 580px;
-        margin-top: 12px;
-        padding-top: 48px;
-        box-sizing: border-box;
-        text-align: center;
-      } 
-
-      .macbook-heading {
-        font-family: inter;
-        font-size: 36px;
-        line-height: 44px;
-        font-weight: 600;
-        color: #1d1d1f;
-        margin-bottom: 2px;
-      }
-
-      .macbook-text {
-        font-family: inter;
-        font-size: 18px;
-        line-height: 25px;
-        color: #1d1d1f;
-        font-weight: 400;
-        margin-bottom: 10px;
-      }
