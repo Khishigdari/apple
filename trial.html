@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* carousel */
+      .carousel-box {
+        width: 100%;
+
+        overflow: scroll;
+        scroll-snap-type: x proximity;
+      }
+      .carousel {
+        display: flex;
+        gap: 16px;
+        width: 3780px;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+      .carousel-box::-webkit-scrollbar {
+        display: none;
+      }
+
+      .carousel-slides {
+        height: 668px;
+        width: 1250px;
+        position: relative;
+      }
+
+      .carousel-slide {
+        height: 668px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .carousel-slides:nth-child(4) {
+        display: none;
+      }
+      .carousel-slides:nth-child(5) {
+        display: none;
+      }
+      .carousel-slides:nth-child(6) {
+        display: none;
+      }
+      .carousel-slides:nth-child(7) {
+        display: none;
+      }
+      .carousel-slides:nth-child(8) {
+        display: none;
+      }
+      .carousel-slides:nth-child(9) {
+        display: none;
+      }
+      .carousel-slides:nth-child(10) {
+        display: none;
+      }
+      .carousel-slides:nth-child(11) {
+        display: none;
+      }
+      .carousel-slides:nth-child(12) {
+        display: none;
+      }
+      .carousel-slides:nth-child(13) {
+        display: none;
+      }
+
+      .carousel-slides:nth-child(14) {
+        display: none;
+      }
+      .carousel-slides:nth-child(15) {
+        display: none;
+      }
+      .carousel-slides:nth-child(16) {
+        display: none;
+      }
+      .carousel-slides:nth-child(17) {
+        display: none;
+      }
+      .carousel-slides:nth-child(18) {
+        display: none;
+      }
+      .carousel-slides:nth-child(19) {
+        display: none;
+      }
+      .carousel-slides:nth-child(20) {
+        display: none;
+      }
+      .carousel-slides:nth-child(21) {
+        display: none;
+      }
+      .stream {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: absolute;
+        left: 70px;
+        bottom: 58px;
+      }
+
+      .btn {
+        height: 44px;
+        border-radius: 999px;
+        padding: 12px 20px;
+        font-family: inter;
+        font-size: 17px;
+        line-height: 20px;
+        font-weight: 400;
+        letter-spacing: -0.37px;
+        background-color: #f5f5f7;
+        color: #000000;
+        box-sizing: border-box;
+        border: 0;
+      }
+
+      .stream-text {
+        color: #ffffff;
+        font-family: inter;
+        font-size: 17px;
+        line-height: 20px;
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+      }
+
+      /* dots */
+
+      .dot-container {
+        display: flex;
+        gap: 14px;
+        justify-content: center;
+        margin-bottom: 12px;
+      }
+
+      .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+        border: 0;
+        background-color: rgba(0, 0, 0, 0.42);
+      }
+
+      .dot-container:hover .dot {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* end of dots */
+
+      /* slides */
+
+      .slide-box {
+        width: 100%;
+
+        overflow: scroll;
+        scroll-snap-type: x proximity;
+      }
+
+      .slide {
+        display: flex;
+        gap: 16px;
+        width: 2149px;
+
+        margin-top: 12px;
+        margin-bottom: 12px;
+      }
+
+      .slide-box::-webkit-scrollbar {
+        display: none;
+      }
+
+      .slides {
+        height: 236px;
+        width: 417px;
+        position: relative;
+      }
+
+      .slides-img {
+        height: 236px;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .slides-title {
+        font-family: inter;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.22px;
+        font-weight: 600;
+        color: #ffffff;
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+      }
+
+      .slides-title-2 {
+        font-family: inter;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: -0.22px;
+        font-weight: 600;
+        color: #ffffff;
+        position: absolute;
+        left: 15px;
+        bottom: 20px;
+      }
+
+      .slides-title-2 {
+        position: absolute;
+        left: 226px;
+        bottom: 109px;
+      }
+
+      .slides:nth-child(6) {
+        display: none;
+      }
+      .slides:nth-child(7) {
+        display: none;
+      }
+      .slides:nth-child(8) {
+        display: none;
+      }
+      .slides:nth-child(9) {
+        display: none;
+      }
+      .slides:nth-child(10) {
+        display: none;
+      }
+
+      /* end of slides */
+
+      /* play button */
+      .play-button {
+        width: 100%;
+        display: flex;
+        justify-content: end;
+      }
+      .play {
+        border-radius: 12px;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d2d2d7;
+        margin-right: 16px;
+        margin-bottom: 22px;
+      }
+
+      .play-button img {
+        width: 12px;
+        height: 12px;
+      }
+
+      /* end of play button */
+
+      @media (max-width: 768px) {
+        /* carousel */
+        .carousel {
+          width: 7034px;
+        }
+        .carousel-slide {
+          height: 338px;
+        }
+        .carousel-slides {
+          height: 338px;
+          width: 689px;
+        }
+
+        .carousel-slides:nth-child(1) {
+          display: none;
+        }
+        .carousel-slides:nth-child(2) {
+          display: none;
+        }
+        .carousel-slides:nth-child(3) {
+          display: none;
+        }
+        .carousel-slides:nth-child(4) {
+          display: block;
+        }
+        .carousel-slides:nth-child(5) {
+          display: block;
+        }
+        .carousel-slides:nth-child(6) {
+          display: block;
+        }
+        .carousel-slides:nth-child(7) {
+          display: block;
+        }
+        .carousel-slides:nth-child(8) {
+          display: block;
+        }
+        .carousel-slides:nth-child(9) {
+          display: block;
+        }
+        .carousel-slides:nth-child(10) {
+          display: block;
+        }
+        .carousel-slides:nth-child(11) {
+          display: block;
+        }
+        .carousel-slides:nth-child(12) {
+          display: block;
+        }
+        .carousel-slides:nth-child(13) {
+          display: block;
+        }
+        /* end of carousel */
+
+        /* slide */
+
+        .slide {
+          display: flex;
+          gap: 16px;
+          width: 890px;
+
+          margin-top: 12px;
+          margin-bottom: 12px;
+        }
+
+        .slide-box::-webkit-scrollbar {
+          display: none;
+        }
+
+        .slides {
+          height: 194px;
+          width: 286px;
+          position: relative;
+        }
+
+        .slides-img {
+          height: 161px;
+          object-fit: cover;
+          width: 100%;
+        }
+
+        .slides-title {
+          font-weight: 700;
+          color: #1d1d1f;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        .slides:nth-child(1) {
+          display: none;
+        }
+        .slides:nth-child(2) {
+          display: none;
+        }
+        .slides:nth-child(3) {
+          display: none;
+        }
+        .slides:nth-child(4) {
+          display: none;
+        }
+        .slides:nth-child(5) {
+          display: none;
+        }
+
+        .slides:nth-child(6) {
+          display: block;
+        }
+        .slides:nth-child(7) {
+          display: block;
+        }
+        .slides:nth-child(8) {
+          display: block;
+        }
+
+        /* end of slide */
+      }
+
+      @media (max-width: 563px) {
+        .carousel {
+          width: 2307.5px;
+        }
+        .carousel-slide {
+          height: 495px;
+        }
+        .carousel-slides {
+          width: 274px;
+          height: 495px;
+        }
+
+        .carousel-slides:nth-child(4) {
+          display: none;
+        }
+        .carousel-slides:nth-child(5) {
+          display: none;
+        }
+        .carousel-slides:nth-child(6) {
+          display: none;
+        }
+        .carousel-slides:nth-child(7) {
+          display: none;
+        }
+        .carousel-slides:nth-child(8) {
+          display: none;
+        }
+        .carousel-slides:nth-child(9) {
+          display: none;
+        }
+        .carousel-slides:nth-child(10) {
+          display: none;
+        }
+        .carousel-slides:nth-child(11) {
+          display: none;
+        }
+        .carousel-slides:nth-child(12) {
+          display: none;
+        }
+        .carousel-slides:nth-child(13) {
+          display: none;
+        }
+        .carousel-slides:nth-child(14) {
+          display: block;
+        }
+        .carousel-slides:nth-child(15) {
+          display: block;
+        }
+        .carousel-slides:nth-child(16) {
+          display: block;
+        }
+        .carousel-slides:nth-child(17) {
+          display: block;
+        }
+        .carousel-slides:nth-child(18) {
+          display: block;
+        }
+        .carousel-slides:nth-child(19) {
+          display: block;
+        }
+        .carousel-slides:nth-child(20) {
+          display: block;
+        }
+        .carousel-slides:nth-child(21) {
+          display: block;
+        }
+
+        /* slide */
+
+        .slide {
+          gap: 6px;
+          width: 482px;
+        }
+
+        .slides {
+          height: 160px;
+          width: 238px;
+          position: relative;
+        }
+
+        .slides-img {
+          height: 134px;
+        }
+
+        .slides-title {
+          font-size: 12px;
+          line-height: 16px;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+
+        .slides:nth-child(1) {
+          display: none;
+        }
+        .slides:nth-child(2) {
+          display: none;
+        }
+        .slides:nth-child(3) {
+          display: none;
+        }
+        .slides:nth-child(4) {
+          display: none;
+        }
+        .slides:nth-child(5) {
+          display: none;
+        }
+
+        .slides:nth-child(6) {
+          display: none;
+        }
+        .slides:nth-child(7) {
+          display: none;
+        }
+        .slides:nth-child(8) {
+          display: none;
+        }
+        .slides:nth-child(9) {
+          display: block;
+        }
+        .slides:nth-child(10) {
+          display: block;
+        }
+
+        /* end of slide */
+      }
+
+      /* end of carousel */
+    </style>
+  </head>
+  <body>
+    <!-- carousel -->
+    <!-- web-carousel -->
+    <div class="carousel-box">
+      <div class="carousel">
+        <section class="carousel-slides">
+          <img src="images/carousel1.jpg" class="carousel-slide" />
+          <div class="stream">
+            <button class="btn">Stream now</button>
+            <div class="stream-text">
+              <strong>Comedy</strong> · Will they make history…or fake it?
+            </div>
+          </div>
+        </section>
+        <section class="carousel-slides">
+          <img src="images/carousel2.jpg" class="carousel-slide" />
+          <div class="stream">
+            <button class="btn">Stream now</button>
+            <div class="stream-text">
+              <strong>Comedy</strong> · Will they make history…or fake it?
+            </div>
+          </div>
+        </section>
+        <section class="carousel-slides">
+          <img src="images/carousel3.jpg" class="carousel-slide" />
+          <div class="stream">
+            <button class="btn">Stream now</button>
+            <div class="stream-text">
+              <strong>Comedy</strong> · Will they make history…or fake it?
+            </div>
+          </div>
+        </section>
+        <!-- carousel-tablet -->
+        <section class="carousel-slides">
+          <img src="images/img1.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img2.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img3.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img4.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img5.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img6.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img7.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img8.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img9.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/img10.jpg" class="carousel-slide" />
+        </section>
+        <!-- carousel-mobile -->
+        <section class="carousel-slides">
+          <img src="images/mob1.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob2.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob3.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob4.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob5.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob6.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob7.jpg" class="carousel-slide" />
+        </section>
+        <section class="carousel-slides">
+          <img src="images/mob8.jpg" class="carousel-slide" />
+        </section>
+      </div>
+    </div>
+    <!-- end of carousel -->
+
+    <!-- dots -->
+    <div class="dot-container">
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <!-- end of dots -->
+
+    <!-- slides -->
+
+    <div class="slide-box">
+      <div class="slide">
+        <section class="slides">
+          <img src="images/slide-1.png" class="slides-img" />
+          <div class="slides-title">Improve Your Posture with Pilates</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-2.png" class="slides-img" />
+          <div class="slides-title-2">R&B Now</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-3.png" class="slides-img" />
+          <div class="slides-title">NBA 2K25 Arcade Edition</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-4.png" class="slides-img" />
+          <div class="slides-title">Strength with Kim</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-5.png" class="slides-img" />
+        </section>
+        <!-- slide-tablet -->
+        <section class="slides">
+          <img src="images/slide-tab1.png" class="slides-img" />
+          <div class="slides-title">La Official</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-tab2.png" class="slides-img" />
+          <div class="slides-title">Travel-Friendly Workouts</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-tab3.png" class="slides-img" />
+          <div class="slides-title">NBA 2K25 Arcade Edition</div>
+        </section>
+        <!-- slide-mobile -->
+        <section class="slides">
+          <img src="images/slide-mob1.png" class="slides-img" />
+          <div class="slides-title">La Official</div>
+        </section>
+        <section class="slides">
+          <img src="images/slide-mob2.png" class="slides-img" />
+          <div class="slides-title">Travel-Friendly Workouts</div>
+        </section>
+      </div>
+    </div>
+
+    <!-- end of slides -->
+
+    <!-- play button -->
+    <div class="play-button">
+      <div class="play">
+        <img src="images/play.png" />
+      </div>
+    </div>
+    <!-- end of play button -->
+  </body>
+</html>
